@@ -1,8 +1,11 @@
 export default function TabButton({children}) {
   //props
+  function handleClick() {
+    console.dir('hello world');
+  }
   return (
     <li>
-      <button>{children /*props.children*/}</button>
+      <button onClick={handleClick}>{children /*props.children*/}</button>
     </li>
   );
 }
