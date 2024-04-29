@@ -1,8 +1,10 @@
-export default function TabButton({children, onSelect}) {
+export default function TabButton({children, onSelect, isSelected}) {
   //props
   return (
     <li>
-      <button onClick={onSelect}>{children /*props.children*/}</button>
+      <button className={isSelected ? 'active' : null} onClick={onSelect}>
+        {children /*props.children*/}
+      </button>
     </li>
   );
 }
