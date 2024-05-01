@@ -7,7 +7,7 @@ import {CORE_CONCEPTS} from './data.js';
 import {EXAMPLES} from './data.js';
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState();
+  cons[(selectedTopic, setSelectedTopic)] = useState();
 
   function handleSelect(selectedButton) {
     // selectedButton > 'components', 'jsx'...
